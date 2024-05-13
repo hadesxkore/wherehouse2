@@ -1,0 +1,50 @@
+.user-card {
+    background: linear-gradient(135deg, #FFFFFF, #E0E0E0); /* Gradient colors */
+    color: #333; /* Text color */
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.user-card img {
+    width: 50px; /* Adjust the width of the image */
+    height: 50px; /* Adjust the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 15px; /* Add some margin to separate image from text */
+}
+.user-card:hover {
+    background: linear-gradient(135deg, #C0C0C0, #D3D3D3); /* Gradient colors on hover */
+}
+.warehouse-counts-card {
+    background-color: #ffffff; /* Card background color */
+    border-radius: 8px; /* Card border radius */
+    padding: 16px; /* Padding inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Card shadow */
+    margin-bottom: 20px; /* Margin bottom to separate from other elements */
+}
+
+.user-card h2 {
+    font-size: 1.5rem; /* Adjust text size */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.user-card p {
+    font-size: 1rem; /* Adjust text size */
+    margin-bottom: 1.5rem;
+}
+
+.user-card button {
+    color: white; /* Button text color */
+    background-color: #ff5a5f; /* Button background color */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.user-card button:hover {
+    background-color: #ff4246; /* Button background color on hover */
+}

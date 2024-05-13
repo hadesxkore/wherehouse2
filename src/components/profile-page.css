@@ -1,0 +1,47 @@
+/* Add this CSS to your existing styles */
+
+@media (max-width: 665px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align items in column direction */
+    }
+  
+    .profile-card,
+    .personal-info-card {
+        width: 90%; /* Set the width of the cards to 90% of the viewport width */
+        max-width: 400px; /* Set a maximum width for the cards */
+        margin: 0 auto 20px; /* Center the cards horizontally and add margin at the bottom */
+        padding: 20px; /* Add padding to the cards */
+    }
+  
+    .profile-card img,
+    .personal-info-card img {
+        max-width: 100%; /* Ensure images don't overflow the card */
+        height: auto; /* Maintain aspect ratio */
+    }
+  
+    .form-input {
+        width: 100%; /* Set input width to 100% of its container */
+        box-sizing: border-box; /* Include padding and border in the width */
+    }
+  
+    /* Adjust button styles if needed */
+    .flex-container button {
+        width: 100%; /* Set button width to 100% of its container */
+    }
+}
+/* CSS for smaller screens */
+@media (max-width: 640px) {
+    .success-popup img {
+        height: 50px; /* Adjust the height as needed */
+        width: auto; /* Maintain aspect ratio */
+    }
+}
+/* CSS for smaller screens */
+@media (max-width: 640px) {
+    .error-popup img {
+        height: 50px; /* Adjust the height as needed */
+        width: auto; /* Maintain aspect ratio */
+    }
+}

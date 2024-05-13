@@ -1,0 +1,131 @@
+/* loading-page.css */
+
+/* Keyframe animations */
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dotJump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Loading page styles */
+.loading-container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-animation {
+    opacity: 0;
+    animation: fadeInDown 2s ease-in-out forwards;
+    margin-bottom: -190px;
+}
+
+.text-animation {
+    opacity: 0;
+    animation: fadeInUp 2s ease-in-out forwards;
+    margin-top: 70px;
+}
+
+.loading-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.loading-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0.7;
+    animation: dotJump 1.5s infinite;
+    margin: 0 5px; /* Add margin between dots */
+}
+
+.loading-dot:not(:last-child) {
+    margin-right: 5px;
+}
+
+.loading-dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loading-dot:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.loading-dot:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.loading-dot:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+.loading-dot:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
+.loading-dot:nth-child(6) {
+    animation-delay: 0.75s;
+}
+
+.loading-dot:nth-child(7) {
+    animation-delay: 0.9s;
+}
+
+.loading-dot:nth-child(8) {
+    animation-delay: 1.05s;
+}
+
+.loading-dot:nth-child(9) {
+    animation-delay: 1.2s;
+}
+
+.loading-dot:nth-child(10) {
+    animation-delay: 1.35s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .logo-animation {
+        margin-bottom: -100px; /* Adjust margin for smaller screens */
+    }
+    .text-animation {
+        margin-top: 40px; /* Adjust margin for smaller screens */
+        font-size: 15px;
+    }
+    .loading-dots {
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+
+}

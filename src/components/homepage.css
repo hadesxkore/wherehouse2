@@ -1,0 +1,59 @@
+/* HomePage.css */
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the fade-in animation to the dropdown-menu class */
+.dropdown-menu {
+    animation: fadeIn 0.3s ease-in-out;
+}
+/* Autosuggest suggestions list */
+.react-autosuggest__suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Autosuggest suggestion */
+  .react-autosuggest__suggestion {
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    cursor: pointer;
+  }
+  
+  /* Autosuggest suggestion hover */
+  .react-autosuggest__suggestion--highlighted {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+  /* Autosuggest input container */
+.react-autosuggest__container {
+    position: relative;
+  }
+  
+  /* Autosuggest input box */
+  .react-autosuggest__input {
+    width: 100%;
+    padding: 0.5rem 2rem; /* Adjust padding as needed */
+    border-radius: 9999px; /* Round the input box */
+    border: 1px solid #ccc; /* Add border for input box */
+    font-size: 16px;
+  }
+/* Autosuggest suggestions list container */
+.react-autosuggest__suggestions-container {
+    position:fixed;
+    max-height: 200px; /* Limit the height of the suggestions list */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    background-color: #fff; /* Set background color for suggestions list */
+
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a card-like appearance */
+    z-index: 999; /* Ensure the suggestions list appears above other elements */
+    margin-top: 5px; /* Adjust margin top as needed */
+}
